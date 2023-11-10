@@ -6,7 +6,7 @@
 /*   By: mbruyant <mbruyant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/27 00:25:16 by mbruyant          #+#    #+#             */
-/*   Updated: 2023/10/11 18:15:31 by mbruyant         ###   ########.fr       */
+/*   Updated: 2023/11/10 17:28:16 by mbruyant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,7 @@ int		ft_strindex(char *str, char c);
 int		ft_strendswith(char *str, char *end);
 int		ft_str_only_sep(char *str, char sep);
 int		ft_isint(char *str);
+int		ft_iswhitespace(char c);
 
 char	**ft_mod_split(char const *s, char c, char append);
 
