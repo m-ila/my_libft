@@ -7,6 +7,7 @@ SRCS = ft_2d_arrays.c \
 ft_ai_to_ia.c \
 ft_calloc.c \
 ft_char_is.c \
+ft_char_is_2.c \
 ft_char_mod.c \
 ft_lst_one.c \
 ft_lst_two.c \
@@ -28,7 +29,10 @@ ft_printf_hex.c \
 ft_printf_nb.c \
 ft_printf_ptr.c \
 ft_printf_uns.c \
-ft_printf_fd.c
+ft_printf_fd.c \
+ft_split_base.c \
+ft_split_unbase.c \
+ft_split_utils.c
 
 OBJS = ${SRCS:.c=.o}
 
