@@ -6,7 +6,7 @@
 /*   By: mbruyant <mbruyant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 17:24:03 by mbruyant          #+#    #+#             */
-/*   Updated: 2023/12/25 21:37:54 by mbruyant         ###   ########.fr       */
+/*   Updated: 2023/12/25 21:39:36 by mbruyant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_char_in_base(char c, const char *base)
 {
 	int	i;
 
-	if (!base || !*base || !ft_isascii(c))
+	if (!base || !*base)
 		return (0);
 	i = 0;
 	while (base[i])
