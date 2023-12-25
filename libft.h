@@ -6,7 +6,7 @@
 /*   By: mbruyant <mbruyant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/27 00:25:16 by mbruyant          #+#    #+#             */
-/*   Updated: 2023/11/10 17:28:16 by mbruyant         ###   ########.fr       */
+/*   Updated: 2023/12/25 21:20:06 by mbruyant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
 # include <string.h>
 # include <fcntl.h>
 # include <limits.h>
+# include <stdarg.h>
 # define SIZE_MAX (65535)
 
 typedef struct s_list
@@ -91,8 +92,18 @@ int		ft_strindex(char *str, char c);
 int		ft_strendswith(char *str, char *end);
 int		ft_str_only_sep(char *str, char sep);
 int		ft_isint(char *str);
-int		ft_iswhitespace(char c);
 
 char	**ft_mod_split(char const *s, char c, char append);
+
+int		ft_printf_fd(int fd, const char *str, ...);
+int		ft_printf_hex(unsigned int nb, const char type, int fd);
+int		ft_printf_char(int c, int fd);
+int		ft_printf_str(char *str, int fd);
+int		ft_printf_uns(unsigned int nb, int fd);
+int		ft_printf_ptr(unsigned long long int ptr, int fd);
+int		ft_printf_nb(long int nb, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
+void	ft_putchar_fd(char c, int fd);
 
 #endif

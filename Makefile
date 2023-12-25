@@ -22,8 +22,13 @@ ft_strlen.c \
 ft_str_misc.c \
 ft_str_mod.c \
 ft_str_n.c \
-ft_char_is_2.c \
-get_next_line.c
+get_next_line.c \
+ft_printf_fun.c \
+ft_printf_hex.c \
+ft_printf_nb.c \
+ft_printf_ptr.c \
+ft_printf_uns.c \
+ft_printf_fd.c
 
 OBJS = ${SRCS:.c=.o}
 
