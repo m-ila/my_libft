@@ -32,7 +32,8 @@ ft_printf_uns.c \
 ft_printf_fd.c \
 ft_split_base.c \
 ft_split_unbase.c \
-ft_split_utils.c
+ft_split_utils.c \
+ft_epur.c
 
 OBJS = ${SRCS:.c=.o}
 
