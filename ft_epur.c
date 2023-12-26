@@ -6,7 +6,7 @@
 /*   By: mbruyant <mbruyant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/26 14:44:31 by mbruyant          #+#    #+#             */
-/*   Updated: 2023/12/26 16:36:48 by mbruyant         ###   ########.fr       */
+/*   Updated: 2023/12/26 16:43:08 by mbruyant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	*ft_str_epur(char *str, char to_remove)
 	return (result);
 }
 
-/* arr has to be a malloced array !!
+/* arr has to be a previously malloced array !!
 so if passing envp as arr, make copy of it or else it will leak */
 void	ft_arr_epur(char **arr, char to_remove)
 {
