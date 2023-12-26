@@ -6,7 +6,7 @@
 /*   By: mbruyant <mbruyant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 18:03:15 by mbruyant          #+#    #+#             */
-/*   Updated: 2023/12/25 21:25:52 by mbruyant         ###   ########.fr       */
+/*   Updated: 2023/12/26 11:54:41 by mbruyant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int	ft_printf_hex(unsigned int nb, const char type, int fd)
 {
 	if (nb == 0)
 	{
-		write(1, "0", fd);
+		write(fd, "0", 1);
 		return (1);
 	}
 	else

@@ -6,7 +6,7 @@
 /*   By: mbruyant <mbruyant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 17:57:32 by mbruyant          #+#    #+#             */
-/*   Updated: 2023/12/25 21:25:48 by mbruyant         ###   ########.fr       */
+/*   Updated: 2023/12/26 11:54:43 by mbruyant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_printf_str(char *str, int fd)
 	}
 	while (str[i] != '\0')
 	{
-		write(1, &str[i], fd);
+		write(fd, &str[i], 1);
 		i++;
 	}
 	return (i);
@@ -32,6 +32,6 @@ int	ft_printf_str(char *str, int fd)
 
 int	ft_printf_char(int c, int fd)
 {
-	write(1, &c, fd);
+	write(fd, &c, 1);
 	return (1);
 }
